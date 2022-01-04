@@ -17,3 +17,6 @@ def greet():
 @app.route('/greet/<example_name>', methods=['GET'])
 def greet_user(example_name):
     return f'<h1>Hello, {example_name}!</h1>'
+
+if __name__ == '__main__':
+    app.run(debug=True)
